@@ -1,0 +1,84 @@
+#!/bin/bash
+clear
+CC='[0m'
+R1='[31;1m'
+G1='[32;1m'
+Y1='[33;1m'
+
+log()
+{
+    echo -e "${G1}${2}${1}${CC}"
+}
+
+execute()
+{
+    log "Executing \"$*\""
+    if $* 2>&1; then
+    log
+    else
+        log "Executing \"$*\" Failed" ${R1}
+        exit
+    fi
+}
+
+printf "\ec"
+
+log "Brainfuck tunnel for Chipset aarch64"
+log "(c) 2020 jalil khoironi."
+log
+
+log "Mengekstrak .........."
+execute unzip -o aarch64.zip
+log "Mengatur perizinan ..."
+log
+execute chmod +x mulai
+execute chmod +x log
+execute chmod +x stop
+execute chmod +x head
+execute chmod +x config
+execute chmod +x pingg
+execute chmod +x direk
+cd brainfuck
+execute chmod +x brainfuck-psiphon-pro-go
+execute chmod +x psiphon-tunnel-core
+log "Menghapus old session ..."
+log
+execute rm -rf /data/data/com.termux/files/usr/bin/brainfuck
+execute rm -rf /data/data/com.termux/files/usr/bin/brainfuck/log
+log "Memindahkan pembaruan ..."
+log
+cd ..
+execute mv mulai /data/data/com.termux/files/usr/bin
+execute mv log /data/data/com.termux/files/usr/bin
+execute mv stop /data/data/com.termux/files/usr/bin
+execute mv head /data/data/com.termux/files/usr/bin
+execute mv config /data/data/com.termux/files/usr/bin
+execute mv pingg /data/data/com.termux/files/usr/bin
+execute mv direk /data/data/com.termux/files/usr/bin
+execute mv brainfuck /data/data/com.termux/files/usr/bin 
+execute mv proxychains.conf /data/data/com.termux/files/usr/etc
+log "Setup shortcut ...."
+log
+execute rm -rf ~/.termux
+execute mv .termux ~/
+termux-reload-settings
+cd ~/
+clear
+log "Brainfuck psiphon tunnel for Chipset aarch64"
+log "(c) 2020 jalil khoironi."
+log
+log "Instalasi selesai ...."
+log "Gunakan tombol atau perintah untuk memulai."
+log 
+log "******************************************"
+log "************* KODE PERINTAH **************"
+log "******************************************"
+log "**   mulai  ----> Memulai tunnel        **"
+log "**   direk  ----> Memulai langsung      **"
+log "**   stop   ----> Menghentikan tunnel   **"
+log "**   config ----> Edit payload/proxy    **"
+log "**   log    ----> Melihat status        **"
+log "**   pingg  ----> Corn ping proxy       **"
+log "**   head   ----> Corn Head proxy       **"
+log "******************************************"
+log
