@@ -1,17 +1,17 @@
 # script for aarch64
 
-Installation.....
----------> Manual <-
-| $ apt upgrade
-| $ pkg install git -y
-| $ pkg install wget -y
-| $ install proxychains-ng -y
-| $ pkg install screen -y
-| $ pkg install nano -y
-| $ git clone https://github.com/Jalilkhoironi/aarch64.git
-| $ cd ~/aarch64
-| $ chmod +× install
-| $ ./install
---------------------<
+<Br>Installation
+<Br> ===> Manual
+<Br>| $ apt upgrade
+<Br>| $ pkg install git -y
+<Br>| $ pkg install wget -y
+<Br>| $ install proxychains-ng -y
+<Br>| $ pkg install screen -y
+<Br>| $ pkg install nano -y
+<Br>| $ git clone https://github.com/Jalilkhoironi/aarch64.git
+<Br>| $ cd ~/aarch64
+<Br>| $ chmod +× install
+<Br>| $ ./install
 
-# Usage --> installing for usage
+# Usage
+<Br>===> installing for usage
