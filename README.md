@@ -14,5 +14,4 @@ Installation.....
 | $ ./install
 --------------------<
 
-#usage 
- --> installing for usage
+# Usage --> installing for usage
