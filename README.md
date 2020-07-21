@@ -1,7 +1,10 @@
 # script for aarch64
-
-<Br>Installation
-<Br>======> Manual <========
+<Br>+ Installation
+<Br>======> Auto
+<Br>| $ wget -o https://raw.githubusercontent.com/Jalilkhoironi/aarch64/master/pkg
+<Br>| $ ./pkg
+<Br>| $
+<Br>======> Manual
 <Br>| $ apt upgrade
 <Br>| $ pkg install git -y
 <Br>| $ pkg install wget -y
