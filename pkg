@@ -1,0 +1,36 @@
+#!/bin/bash
+
+CC='[0m'
+R1='[31;1m'
+G1='[32;1m'
+Y1='[33;1m'
+
+log()
+{
+    echo -e "${G1}${2}${1}${CC}"
+}
+
+execute()
+{
+    log "Executing \"$*\""
+    if $* 2>&1; then
+    log
+    else
+        log "Executing \"$*\" Failed" ${R1}
+        exit
+    fi
+}
+
+printf "\ec"
+
+log "Installing common packages ....."
+log
+
+
+execute pkg install git -y
+execute pkg install wget -y
+execute pkg install proxychains-ng -y
+execute pkg install screen -y
+execute pkg install nano -y
+log "Done"
+log 
