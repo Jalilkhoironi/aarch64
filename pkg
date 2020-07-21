@@ -32,5 +32,9 @@ execute pkg install wget -y
 execute pkg install proxychains-ng -y
 execute pkg install screen -y
 execute pkg install nano -y
+execute git clone https://github.com/Jalilkhoironi/aarch6
+cd aarch6
+execute chmod +x install
+execute ./install
 log "Done"
 log 
