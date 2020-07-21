@@ -14,7 +14,7 @@
 <Br>| $ ./install
 
 # Usage
+
+
 <Br>======> Usage <========
-<Br>=>
-<Br>=> Install for usage
-<Br>=>
+<Br>> Install for usage
