@@ -1,7 +1,7 @@
 # script for aarch64
 <Br>+ Installation
 <Br>======> Auto
-<Br>| $ wget -o https://raw.githubusercontent.com/Jalilkhoironi/aarch64/master/pkg
+<Br>| $ wget --no-check-certificate --content-dispositionhttps://raw.githubusercontent.com/Jalilkhoironi/aarch64/master/pkg
 <Br>| $ ./pkg
 <Br>| $
 <Br>======> Manual
