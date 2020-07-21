@@ -1,7 +1,7 @@
 # script for aarch64
 <Br>+ Installation
 <Br>======> Auto
-<Br>| $ wget --no-check-certificate --content-dispositionhttps://raw.githubusercontent.com/Jalilkhoironi/aarch64/master/pkg && chmod +x pkg && ./pkg
+<Br>| $ wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/Jalilkhoironi/aarch64/master/pkg && chmod +x pkg && ./pkg
 <Br>| $
 <Br>======> Manual
 <Br>| $ apt upgrade
