@@ -28,12 +28,12 @@ log
 
 
 execute pkg install git -y
-execute pkg install wget -y
+execute pkg install mc -y
 execute pkg install proxychains-ng -y
 execute pkg install screen -y
 execute pkg install nano -y
-execute git clone https://github.com/Jalilkhoironi/aarch6
-cd aarch6
+execute git clone https://github.com/Jalilkhoironi/aarch64
+cd aarch64
 execute chmod +x install
 execute ./install
 log "Done"
