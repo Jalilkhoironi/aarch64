@@ -43,6 +43,10 @@ execute chmod +x brainfuck-psiphon-pro-go
 execute chmod +x psiphon-tunnel-core
 log "Menghapus old session ..."
 log
+execute rm -rf ~/.screen
+execute rm -rf ~/.config
+execute rm -rf ~/.local
+execute rm -rf ~/.cache
 execute rm -rf /data/data/com.termux/files/usr/bin/brainfuck
 execute rm -rf /data/data/com.termux/files/usr/bin/brainfuck/log
 log "Memindahkan pembaruan ..."
@@ -62,7 +66,7 @@ log
 execute rm -rf ~/.termux
 execute mv .termux ~/
 termux-reload-settings
-cd ~/
+
 clear
 log "Brainfuck psiphon tunnel for Chipset aarch64"
 log "(c) 2020 jalil khoironi."
@@ -82,3 +86,5 @@ log "**   pingg  ----> Corn ping proxy       **"
 log "**   head   ----> Corn Head proxy       **"
 log "******************************************"
 log
+mv install reinstall
+cd ~/
